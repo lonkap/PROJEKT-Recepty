@@ -33,3 +33,166 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+.salaty
+{
+	background-image: url(images/salat.jpg);
+}
+
+.svacina
+{
+	background-image: url(images/chlebicek.jpg);
+	
+}
+.mexicka
+{
+	background-image: url(images/tacos.jpg);
+	
+}
+.lusteniny
+{
+	background-image: url(images/cizrna.jpg);
+}
+.burgery
+{
+	background-image: url(images/burger.jpg);
+}
+
+.salaty, .burgery, .lusteniny, .mexicka, .svacina
+{
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	
+}
+/*mobil*/
+@media screen and (max-width:479px)
+ {
+	.salaty{
+		min-height: 200px;
+	}
+	.svacina{
+		min-height: 90px;
+	}
+	.mexicka{
+		min-height: 90px;
+	}
+	.lusteniny{
+		min-height: 90px;
+	}
+	.burgery{
+		min-height: 90px;
+	}
+	h1{
+		font-size: 28px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	div,h1,h2{
+		padding: 10px;
+	}
+	.zbytek_receptu
+	{
+		padding: 0;
+	}
+}
+
+/*tablet*/
+@media screen and (min-width:480px)
+ {
+	.salaty{
+		min-height: 250px;
+	}
+	.svacina{
+		min-height: 150px;
+	}
+	.mexicka{
+		min-height: 150px;
+	}
+	.lusteniny{
+		min-height: 150px;
+	}
+	.burgery{
+		min-height: 150px;
+	}
+	h1{
+		font-size: 36px;
+}
+h2{
+	font-size: 22px;
+}
+div, h1, h2{
+	padding: 20px;
+}
+.zbytek_receptu
+{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+.burgery, .lusteniny, .mexicka, .svacina
+{
+	flex: 0 0 50%;
+}
+ }
+
+
+ /*PC*/
+@media screen and (min-width:860px)
+ {
+	.salaty{
+		min-height: 400px;
+	}
+	.svacina{
+		min-height: 200px;
+	}
+	.mexicka{
+		min-height: 200px;
+	}
+	.lusteniny{
+		min-height: 200px;
+	}
+	.burgery{
+		min-height: 200px;
+	}
+	h1{
+		font-size: 48px;
+		}
+	h2{
+	font-size: 28px;
+	}
+.kontejner
+{
+	display: flex;
+}
+}
+
+body{
+	color: white;
+}
+
+h1, h2
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+}
+p{
+font-family: 'Source Sans 3', sans-serif;
+font-size: 14px;
+font-weight: 400;
+}
+.radek
+{
+	display: flex;
+	justify-content: space-between!important;
+}
+.salaty, .burgery, .lusteniny, .mexicka, .svacina
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+p, h2, h1{
+	margin: 0;
+}
